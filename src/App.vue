@@ -1,12 +1,5 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
-import WatchEffect from './components/WatchEffect.vue';
-</script>
-
 <template>
-  <div>
+  <!-- <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
@@ -14,9 +7,17 @@ import WatchEffect from './components/WatchEffect.vue';
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <WatchEffect />
+  <WatchEffect /> -->
   <!-- <HelloWorld msg="Vite + Vue" /> -->
+  <ProvideInject />
 </template>
+
+<script setup lang="ts">
+// This starter template is using Vue 3 <script setup> SFCs
+// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
+import HelloWorld from './components/HelloWorld.vue'
+import ProvideInject from './components/provdeInject/ProvideTest.vue';
+</script>
 
 <style scoped>
 .logo {

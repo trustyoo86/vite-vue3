@@ -1,4 +1,4 @@
-import { resolve } from 'path';
+import path from 'path';
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
@@ -6,16 +6,13 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   resolve: {
     alias: {
-      '/@/': resolve(__dirname, './src'),
-      '/@components/': resolve(__dirname, './src/components'),
-      '/@app_modules': resolve(__dirname, './src/modules'),
-      '/@store': resolve(__dirname, './src/store'),
+      '/@/': path.resolve(__dirname, './src'),
+      '/@components/': path.resolve(__dirname, './src/components'),
+      '/@app_modules': path.resolve(__dirname, './src/modules'),
+      '/@store': path.resolve(__dirname, './src/store'),
     },
   },
 
   plugins: [vue()]
 })
-function __dirname(__dirname: any, arg1: string): string {
-  throw new Error('Function not implemented.');
-}
 
